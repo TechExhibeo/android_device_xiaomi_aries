@@ -17,6 +17,9 @@
 # Sample: This is where we'd set a backup provider if we had one
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/validus/config/common_full_phone.mk)
+
 # Get the long list of APNs
 PRODUCT_COPY_FILES := device/xiaomi/msm8960-common/configs/apns-conf.xml:system/etc/apns-conf.xml
 
@@ -29,7 +32,7 @@ $(call inherit-product, device/xiaomi/msm8960-common/common.mk)
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-PRODUCT_NAME := aries
+PRODUCT_NAME := validus_aries
 PRODUCT_DEVICE := aries
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 2
