@@ -14,6 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo aries-user
-add_lunch_combo aries-userdebug
-add_lunch_combo aries-eng
+add_lunch_combo validus_aries-userdebug
